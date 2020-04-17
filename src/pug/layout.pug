@@ -1,0 +1,39 @@
+//- Стандартный шаблон страницы
+include mixins.pug
+
+doctype html
+html(class='page  no-js', lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    block meta
+      title Home
+
+    block head
+      link(href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap", rel="stylesheet")
+      link(rel='stylesheet', href='css/style.css')
+      script.
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+  body
+    noscript You have javascript disabled. It scares.
+
+    .page__inner
+      .page__content
+
+        block header
+          header
+            p It must be header here
+
+        block content
+          p Content
+
+      .page__footer-wrapper
+        block footer
+          p It must be footer here
+
+    block page-bottom
+      script(src='js/vendors.min.js')
+      script(src='js/script.min.js')

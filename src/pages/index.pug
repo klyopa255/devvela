@@ -1,0 +1,158 @@
+extends ../pug/layout.pug
+
+block meta
+  title Projects
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block content
+  section.heading-section
+    .heading-section__overlay
+      .heading-section__container
+        h1.heading-section__title Our projects
+        p.heading-section__text Our talent and expertise are at your service. We can make you shine bright.
+
+  section.archive-projects
+    ul.archive-projects__list
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Enterprise
+              h2.archive-projects__title Manufacturing machine status monitoring
+              p.archive-projects__description Industrial IOT APP to help engineers hold their finger on the factory’s pulse.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-mobile.svg", alt="")
+              p.archive-projects__tehnologies-list Golang, PHP, Electron framework, PostgreSQL, HTML, CSS3
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image1.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Retail
+              h2.archive-projects__title Shoplocal
+              p.archive-projects__description With Shoplocal, you don’t need to go through endless retailer paper ads to find the best deals. Browse top offers nearby and build shopping lists on your pc or mobile.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+              p.archive-projects__tehnologies-list ReactJS
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image2.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Health services
+              h2.archive-projects__title Player’s health
+              p.archive-projects__description High-load sports injury management platform for web and mobile devices, which provides athletic organisations with the essential medical information and injury reporting.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-mobile.svg", alt="")
+              p.archive-projects__tehnologies-list ReactJS, ImmutableJS, NodeJS, Flux, HTML5, CSS3, iOS, Android, Cordova, Groovy, Grails, MySQL, Java, Babel
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image3.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Game
+              h2.archive-projects__title Exantra World
+              p.archive-projects__description Never before has your gaming experience been so tied to your real-life decisions.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-mobile.svg", alt="")
+              p.archive-projects__tehnologies-list Swift 3
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image4.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Retail
+              h2.archive-projects__title Shoplocal Platform
+              p.archive-projects__description Shoplocal platform is a tool that allows retailers to display a whole range of deal ads on their website.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+              p.archive-projects__tehnologies-list AngularJS
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image5.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Leisure
+              h2.archive-projects__title Chicago Electric Boat Company
+              p.archive-projects__description Custom boat reservation system with advanced features.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+              p.archive-projects__tehnologies-list Yii Framework, PHP, MySQL, AngularJS, HTML5, jQuery, Stripe
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image6.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Health services
+              h2.archive-projects__title Premier Point Home Heath
+              p.archive-projects__description Bringing the connected health concept to life. The development of a mobile app allowing patients to manage their treatment schedule on the fly.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-mobile.svg", alt="")
+              p.archive-projects__tehnologies-list ReactJS, MongoDB, Spring
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image7.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Social, startaps
+              h2.archive-projects__title Seminar Mapping Site
+              p.archive-projects__description Looking to improve healthcare marketing and sales through digital? Check out how this agency did with Seminar mapping site, a web platform built by DEVVELA.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+              p.archive-projects__tehnologies-list PHP, API, MySQL, Yii Framework
+      li.archive-projects__item
+        a.archive-projects__link(href="#")
+          .archive-projects__image
+            img(src="/img/image8.png", alt="")
+          .archive-projects__content
+            .archive-projects__heading
+              p.archive-projects__category Health services
+              h2.archive-projects__title Player’s health
+              p.archive-projects__description High-load sports injury management platform for web and mobile devices, which provides athletic organisations with the essential medical information and injury reporting.
+            .archive-projects__footer
+              ul.archive-projects__gadjets-list
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-web.svg", alt="")
+                li.archive-projects__gadjets-item
+                  img.archive-projects__gadjets-image(src="/img/portfolio-service-icon-mobile.svg", alt="")
+              p.archive-projects__tehnologies-list ReactJS, ImmutableJS, NodeJS, Flux, HTML5, CSS3, iOS, Android, Cordova, Groovy, Grails, MySQL, Java, Babel
+
+//- block footer
+//-   p footer
+
+//- block append page-bottom
+//-   script(src='js/some.js')

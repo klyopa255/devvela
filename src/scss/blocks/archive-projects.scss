@@ -1,0 +1,253 @@
+.archive-projects {
+  padding: 0 1vw;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1660px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 90px;
+    list-style: none;
+  }
+
+  &__item {
+    width: 32%;
+    margin-bottom: 70px;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      display: block;
+      padding-bottom: 68%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 30px;
+  }
+
+  &__category {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+  }
+
+  &__description {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  &__gadjets-list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__gadjets-item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__tehnologies-list {
+    position: relative;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    padding-right: 35px;
+    text-align: right;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      margin-top: -12.5px;
+      background: url('/img/portfolio-service-icon-iot.svg') center no-repeat;
+    }
+  }
+}
+
+@media (max-width: $screen-xz) {
+
+  .archive-projects {
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__content {
+      padding: 10px 20px;
+    }
+
+    &__category {
+      font-size: 0.8vw;
+    }
+
+    &__title {
+      font-size: 1.5vw;
+      line-height: 1.5em;
+    }
+
+    &__description {
+      font-size: 0.8vw;
+      line-height: 1.5em;
+    }
+
+    &__gadjets-list {
+      margin-bottom: 20px;
+    }
+
+    &__gadjets-item {
+      width: 20px;
+      height: 20px;
+
+      & img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__tehnologies-list {
+      font-size: 0.8vw;
+      line-height: 1.5em;
+
+      &:after {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+
+  .archive-projects {
+
+    &__item {
+      width: 49%;
+
+      &:last-child {
+        margin: auto;
+      }
+    }
+
+    &__category {
+      font-size: 1.5vw;
+    }
+
+    &__title {
+      font-size: 2.5vw;
+    }
+
+    &__description {
+      font-size: 1.5vw;
+    }
+
+    &__tehnologies-list {
+      font-size: 1.2vw;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+
+  .archive-projects {
+
+    &__item {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 5vw;
+    }
+
+    &__category {
+      font-size: 2.5vw;
+    }
+
+    &__title {
+      font-size: 5vw;
+    }
+
+    &__description {
+      font-size: 2.5vw;
+    }
+
+    &__tehnologies-list {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+@media (max-width: $screen-xs) {
+
+  .archive-projects {
+
+    &__item {
+      width: 95%;
+      margin: auto;
+      margin-bottom: 7vw;
+    }
+  }
+}
